@@ -104,7 +104,7 @@ import { useEffect, useState } from "react";
                 return (
                     
                     <div className="movie"  key={index}>
-                        <img src={img_path+item.poster_path} className="poster"></img>
+                        <img src={img_path+item.poster_path} className="poster"/>
                             <div className="movie-details">
                                  <div className="box" key={item.id}>
                                      <h4 className="title">{item.title}</h4>
