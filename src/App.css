@@ -40,14 +40,12 @@ nav ul li a::before{
     height: 3px;
     width:0;
     transform: translateX(-50%);
-    background-color: var(--primary-color);
     transition: all 0.3s ease-in-out;
 }
 nav ul li a:hover:before{
     width:100%;
 }
 nav ul li a:focus{
-    background-color: var(--primary-color);
     opacity: 0.2px;
     border-radius: 20px;
 }
@@ -57,24 +55,25 @@ nav ul li a:focus::before{
 .search-btn{
     display: flex;
 }
+
 .search-btn button{
-    background-color: white;
+    background-color: navy;
     padding: 0.2rem 0.5rem;
     border-radius: 0 2rem 2rem 0;
-    color: rgb(0, 0, 0);
+    color: white;
     font-size: 1rem;
     outline: none;
-    border: 1px solid black;
+    border: none;
 }
+
 .inputText{
     outline: none;
     border: 1px solid whitesmoke;
-    padding: 0.3rem 1rem;
     border-radius: 2rem 0 0 2rem;
+    padding: 0.3rem 1rem;
     font-size: 1rem;
     color: rgb(0, 0, 0);
     background-color: white;
-    box-shadow: inset 0 5px 10px ;
 }
 .inputText::placeholder{
     color: rgb(0, 0, 0);
@@ -124,7 +123,7 @@ nav ul li a:focus::before{
     left: 0;
     bottom: 0;
     max-height: 100%;
-    background-color:black;
+    background-color: black;
     opacity: 0.9;
     color: white;
     box-sizing: border-box;
@@ -153,7 +152,6 @@ nav ul li a:focus::before{
 }
 @media (max-width:900px){
     .header{
-        background-color: var(--secondary-color);
         height: 180px;
     }
     nav ul{
