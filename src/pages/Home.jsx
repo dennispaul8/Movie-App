@@ -70,7 +70,7 @@ import { useEffect, useState } from "react";
 
     
       
-        let img_path="https://image.tmdb.org/t/p/w500";
+//         let img_path="https://image.tmdb.org/t/p/w500";
     return(
         
            <main className="main1">
@@ -81,7 +81,7 @@ import { useEffect, useState } from "react";
                         {
                             arr.map((value,pos)=>{
                                 return(
-                                    <li key={pos}><a href=""  name={value} onClick={(e)=>{getData(e.target.name)}}>{value}</a></li>
+                                    <li key={pos}><a href="#"  name={value} onClick={(e)=>{getData(e.target.name)}}>{value}</a></li>
                                 )
                             })
                         }
@@ -104,7 +104,7 @@ import { useEffect, useState } from "react";
                 return (
                     
                     <div className="movie"  key={index}>
-                        <img src={img_path+item.poster_path} className="poster"/>
+                        <img src={"https://image.tmdb.org/t/p/w500"+item.poster_path} className="poster"/>
                             <div className="movie-details">
                                  <div className="box" key={item.id}>
                                      <h4 className="title">{item.title}</h4>
