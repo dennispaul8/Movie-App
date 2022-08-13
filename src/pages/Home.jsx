@@ -81,7 +81,7 @@ import { useEffect, useState } from "react";
                         {
                             arr.map((value,pos)=>{
                                 return(
-                                    <li key={pos}><a href="#"  name={value} onClick={(e)=>{getData(e.target.name)}}>{value}</a></li>
+                                    <li key={pos}><a href=""  name={value} onClick={(e)=>{getData(e.target.name)}}>{value}</a></li>
                                 )
                             })
                         }
